@@ -9,9 +9,9 @@
                         <form action="" method="post">
                             @csrf
                             <div class="row mb-3">
-                                <input class="form-control @error('email') is-invalid @enderror" type="text" name="email"
-                                    id="email" value="{{ old('email') }}" placeholder="Correo electronico">
-                                @error('email')
+                                <input class="form-control @error('username') is-invalid @enderror" type="text" name="username"
+                                    id="username" value="{{ old('username') }}" placeholder="Usuario">
+                                @error('username')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
